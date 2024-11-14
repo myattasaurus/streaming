@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: Calibri, Helvetica, sans-serif;
+    background-color: transparent;
     margin: 0;
     height: 100%;
     -webkit-user-select: none;
@@ -12,16 +12,28 @@ body {
     user-select: none;
 }
 
-.center {
+.display {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100%;
+    height: 1080px;
 }
 
 .text {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 9vw;
+    font-family: Calibri, Helvetica, sans-serif;
+    font-size: 111px;
+}
+
+.admin {
+    background-color: white;
+    padding: 10px;
+}
+
+.admin>.innards {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    height: 100%;
 }

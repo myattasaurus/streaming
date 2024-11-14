@@ -6,13 +6,20 @@ let DAYS = 24 * HOURS;
 let timerElement;
 let targetTimestamp;
 
-function onLoad() {
-    timerElement = document.getElementById('timer');
+function startTimer() {
+    timerElement = document.createElement('span');
+    document.getElementById('text').append(timerElement);
     requestAnimationFrame(firstTimerAnimationTick);
 }
 
 function firstTimerAnimationTick(timestamp) {
-    targetTimestamp = 1 * HOURS + 10 * SECONDS + timestamp;
+    let hours = Number(document.getElementById('hours').value);
+    let minutes = Number(document.getElementById('minutes').value);
+    let seconds = Number(document.getElementById('seconds').value);
+
+    targetTimestamp = hours * HOURS + minutes * MINUTES + seconds * SECONDS + timestamp + 1 * SECONDS;
+
+    document.getElementById('setup').remove();
     requestAnimationFrame(timerAnimationTick);
 }
 

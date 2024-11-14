@@ -6,12 +6,20 @@
     <script src="timer.js"></script>
 </head>
 
-<body onload="onLoad()">
-    <div class="center">
-        <div class="text">
+<body>
+    <div class="display" id="display">
+        <div class="text" id="text">
             Starting Soon
             <br />
-            <span id="timer">5:00</span>
+            <div id="setup">
+                <input id="hours" type="number" min="0" value="0" />:
+                <input id="minutes" type="number" min="0" max="59" value="5" />:
+                <input id="seconds" type="number" min="0" max="59" value="0" />
+                <br />
+                <button id="start-timer-button" onclick="startTimer()">Start</button>
+            </div>
+        </div>
+        <div>
         </div>
     </div>
 </body>
