@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="dock.css" />
+    <script src="dock.js"></script>
+    <script src="https://kit.fontawesome.com/60fa5876ab.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="onLoad()">
+    <div id="timer-controls">
+        <div class="center">
+            <p class="center">Start stream at</p>
+            <input id="timer-time" type="datetime-local" onchange="timeSelected()" class="center" />
+        </div>
+        <div id="timer-buttons" class="center">
+            <button id="timer-play-button" onclick="play()"><i class="fa-solid fa-play"></i></button>
+            <button id="timer-pause-button" onclick="pause()"><i class="fa-solid fa-pause"></i></button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.center {
+    width: fit-content;
+    margin: auto;
+}
+
+button {
+    border-color: darkgray;
+    border-width: 1px;
+    border-radius: 3px;
+    width: 43px;
+    padding: 1px 2px 1px 2px;
+    line-height: 0px;
+    vertical-align: middle;
+}
+
+i {
+    padding-top: 1px;
+    padding-right: 0;
+}
+
+.fa-stop,
+.fa-rotate-left {
+    padding-right: 1px;
+}
+
+#timer-buttons {
+    padding-top: 8px;
+}
